@@ -1,0 +1,13 @@
+# Joe Car Care
+
+> Premium car washing, detailing, interior cleaning and accessory installation in Nagercoil, Tamil Nadu.
+
+Joe Car Care is a full-service auto studio offering professional car wash, ceramic detailing, polishing, interior shampooing, sun film, audio installation and OEM accessories. Open Mon–Sat 9:00–21:00 and Sun 10:00–18:00.
+
+## Pages
+
+- [Home](/): Overview of Joe Car Care, featured services, and workshop highlights.
+- [Services](/services): Full list of car care services with pricing.
+- [Gallery](/gallery): Photos of the workshop and recent detailing work.
+- [About](/about): Story, mission and team behind Joe Car Care.
+- [Contact](/contact): Address, phone, hours and service booking.
