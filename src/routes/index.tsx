@@ -22,9 +22,7 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Cinematic car care, detailing and accessories." },
       { property: "og:image", content: heroCar },
     ],
-    links: [
-      { rel: "preload", as: "image", href: heroCar, fetchpriority: "high" },
-    ],
+    links: [{ rel: "preload", as: "image", href: heroCar, fetchpriority: "high" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -75,19 +73,20 @@ function HomePage() {
         <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-center px-6 pt-20">
           <div className="max-w-3xl animate-float-up">
             <h1 className="font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
-              Premium Car Care<br />
-              & <span className="text-primary text-glow">Accessories</span>
+              Premium Car Care
+              <br />& <span className="text-primary text-glow">Accessories</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-foreground/80 md:text-lg">
-              Professional car washing, detailing, interior cleaning and accessory
-              installation — engineered for drivers who demand the very best.
+              Professional car washing, detailing, interior cleaning and accessory installation —
+              engineered for drivers who demand the very best.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 to="/services"
                 className="group inline-flex items-center gap-2 rounded-md yellow-gradient px-6 py-3.5 text-sm font-bold uppercase tracking-widest text-primary-foreground hover:shadow-[0_0_40px_-4px_var(--accent)] transition-shadow"
               >
-                Explore Services <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                Explore Services{" "}
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/contact"
@@ -114,8 +113,12 @@ function HomePage() {
             { v: "4.9★", l: "Customer Rating" },
           ].map((s) => (
             <div key={s.l} className="px-6 py-8 text-center">
-              <div className="font-display text-3xl md:text-5xl font-bold text-primary text-glow">{s.v}</div>
-              <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.l}</div>
+              <div className="font-display text-3xl md:text-5xl font-bold text-primary text-glow">
+                {s.v}
+              </div>
+              <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+                {s.l}
+              </div>
             </div>
           ))}
         </div>
@@ -125,12 +128,17 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">— Our Services</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              — Our Services
+            </p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold uppercase">
               Built for <span className="text-primary">performance</span>
             </h2>
           </div>
-          <Link to="/services" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:gap-3 transition-all">
+          <Link
+            to="/services"
+            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:gap-3 transition-all"
+          >
             View all <ArrowRight size={16} />
           </Link>
         </div>
@@ -146,34 +154,34 @@ function HomePage() {
         <div className="mx-auto max-w-7xl px-6 py-24 grid gap-12 md:grid-cols-2 items-center">
           <div className="relative">
             <div className="absolute -inset-4 yellow-gradient opacity-25 blur-3xl rounded-3xl" />
-            <div className="relative rounded-2xl border border-border bg-background/40 p-10 flex items-center justify-center">
-              <img
-                src={brandEmblem}
-                alt="Joe Car Care brand emblem"
-                loading="lazy"
-                className="max-h-80 w-auto object-contain drop-shadow-[0_0_30px_rgba(234,179,8,0.35)]"
-              />
-            </div>
+            <img
+              src={brandEmblem}
+              alt="Joe Car Care brand emblem"
+              loading="lazy"
+              className="max-h-80 w-auto object-contain drop-shadow-[0_0_30px_rgba(234,179,8,0.35)]"
+            />
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">— Our Philosophy</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              — Our Philosophy
+            </p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold uppercase leading-[1.05]">
               Your car is an <span className="text-primary text-glow">investment</span>.<br />
               We make sure it looks like one.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              At Joe Car Care, we believe that a luxury vehicle deserves more than just a
-              standard cleanup — it demands precision care. Our elite high-pressure water
-              wash uses advanced techniques and mineral-free water to blast away road grime
-              while flawlessly preserving your vehicle's delicate paintwork and exotic wheels.
+              At Joe Car Care, we believe that a luxury vehicle deserves more than just a standard
+              cleanup — it demands precision care. Our elite high-pressure water wash uses advanced
+              techniques and mineral-free water to blast away road grime while flawlessly preserving
+              your vehicle's delicate paintwork and exotic wheels.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              But we don't stop at a spotless exterior. We elevate your entire driving
-              experience from the floorboards up with custom-fit seat covers and premium
-              all-weather floor mats, meticulously installed to guarantee a tight,
-              wrinkle-free, factory-like finish. From supercars to luxury SUVs, we combine
-              scratch-free methods with premium interior upgrades to protect your investment
-              and keep your ride looking showroom-fresh, every single day.
+              But we don't stop at a spotless exterior. We elevate your entire driving experience
+              from the floorboards up with custom-fit seat covers and premium all-weather floor
+              mats, meticulously installed to guarantee a tight, wrinkle-free, factory-like finish.
+              From supercars to luxury SUVs, we combine scratch-free methods with premium interior
+              upgrades to protect your investment and keep your ride looking showroom-fresh, every
+              single day.
             </p>
           </div>
         </div>
@@ -183,8 +191,16 @@ function HomePage() {
       <section className="bg-card border-y border-border">
         <div className="mx-auto max-w-7xl px-6 py-24 grid gap-12 md:grid-cols-3">
           {[
-            { i: ShieldCheck, t: "Trusted Quality", d: "Premium-grade chemicals and OEM accessories only." },
-            { i: Wrench, t: "Expert Crew", d: "Certified detailers with 15+ years of garage experience." },
+            {
+              i: ShieldCheck,
+              t: "Trusted Quality",
+              d: "Premium-grade chemicals and OEM accessories only.",
+            },
+            {
+              i: Wrench,
+              t: "Expert Crew",
+              d: "Certified detailers with 15+ years of garage experience.",
+            },
             { i: Star, t: "5-Star Service", d: "Loved by 5,000+ customers across the city." },
           ].map(({ i: Icon, t, d }) => (
             <div key={t} className="group">
@@ -202,12 +218,17 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">— The Workshop</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              — The Workshop
+            </p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold uppercase">
               Inside our <span className="text-primary">garage</span>
             </h2>
           </div>
-          <Link to="/gallery" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:gap-3 transition-all">
+          <Link
+            to="/gallery"
+            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:gap-3 transition-all"
+          >
             Open gallery <ArrowRight size={16} />
           </Link>
         </div>
@@ -217,8 +238,16 @@ function HomePage() {
             { src: gallery2, alt: "Detailing crew polishing a luxury car" },
             { src: gallery3, alt: "Foam spray covering a car body" },
           ].map((g, i) => (
-            <div key={i} className="group relative overflow-hidden rounded-xl border border-border aspect-[4/3]">
-              <img src={g.src} alt={g.alt} loading="lazy" className="img-zoom h-full w-full object-cover" />
+            <div
+              key={i}
+              className="group relative overflow-hidden rounded-xl border border-border aspect-[4/3]"
+            >
+              <img
+                src={g.src}
+                alt={g.alt}
+                loading="lazy"
+                className="img-zoom h-full w-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             </div>
           ))}
