@@ -30,9 +30,9 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "Joe Car Care",
-          image: "https://joe-carcare-premium-shine.lovable.app" + heroCar,
+          image: "https://www.joecarcare.com" + heroCar,
           telephone: "+91-94869-55358",
-          url: "https://joe-carcare-premium-shine.lovable.app",
+          url: "https://www.joecarcare.com",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Nagercoil",
